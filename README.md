@@ -34,19 +34,19 @@ The Quote Engine module is responsible for ingesting many types of files that co
 "This is a quote body" - Author
 ```
 
-This module is composed of the following classes:
+The module is composed of the following classes:
 
-* QuoteModel - An class to encapsulate the body and author
-* IngestorInterface - An abstract base class for Ingestors that defines two methods with the following class method signatures:
+* **QuoteModel** - An class to encapsulate the body and author
+* **IngestorInterface** - An abstract base class for Ingestors that defines two methods with the following class method signatures:
   ```bash
   def can_ingest(cls, path: str) -> boolean
   def parse(cls, path: str) -> List[QuoteModel]
   ```
-* Ingestor - A class that realizes the IngestorInterface and encapsulates the helper classes
-* CSVIngestor - A helper class that implements a strategy object that realizes the `IngestorInterface` for a csv file type
-* DocxIngestor - A helper class that implements a strategy object that realizes the `IngestorInterface` for a docx file type
-* PDFIngestor - A helper class that implements a strategy object that realizes the `IngestorInterface` for a pdf file type
-* TxtIngestor - A helper class that implements a strategy object that realizes the `IngestorInterface` for a txt file type
+* **Ingestor** - A class that realizes the IngestorInterface and encapsulates the helper classes
+* **CSVIngestor** - A helper class that implements a strategy object that realizes the `IngestorInterface` for a csv file type
+* **DocxIngestor** - A helper class that implements a strategy object that realizes the `IngestorInterface` for a docx file type
+* **PDFIngestor** - A helper class that implements a strategy object that realizes the `IngestorInterface` for a pdf file type
+* **TxtIngestor** - A helper class that implements a strategy object that realizes the `IngestorInterface` for a txt file type
 
 
 ## Meme Engine
@@ -55,7 +55,7 @@ The Meme Engine Module is responsible for manipulating and drawing text onto ima
 
 This module is composed of the following classes:
 
-* MemeEngine - A Meme Generator class that implements the following instance method signature, which returns the path to the manipulated image:
+* **MemeEngine** - A Meme Generator class that implements the following instance method signature, which returns the path to the manipulated image:
   ```bash
   make_meme(self, img_path, text, author, width = 500) -> str
   ```
@@ -76,8 +76,6 @@ Clone the source locally:
 $ git clone https://github.com/thepembeweb/meme-generator.git
 $ cd meme-generator
 ```
-
-Use your package manager to install `pip`.
 
 Install project dependencies:
 
