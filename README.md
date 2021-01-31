@@ -1,4 +1,4 @@
-# Dog meme generator
+# Dog Meme Generator
 
 > This project showcases a multimedia application to dynamically generate memes, including an image with an overlaid quote. It is built as a Flask app that uses a Quote Engine Module and Meme Generator Modules to generate a random captioned image.
 
