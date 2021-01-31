@@ -83,7 +83,7 @@ Install project dependencies:
 $ pip install -r requirements.txt
 ```
 
-### CLI application
+### Running the CLI application
 
 Generate meme with defined arguments
 
@@ -102,7 +102,7 @@ $ cd src
 $ python3 meme.py
 ```
 
-### Web application
+### Running the Web application
 
 Start the development server:
 
